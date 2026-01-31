@@ -10,7 +10,6 @@
   background: #f3f3f3;
   border-radius: 16px;
   padding: 2rem 3rem;
-  min-width: 320px;
   max-width: 600px;
   margin: 2rem auto;
 
@@ -121,4 +120,30 @@
 .fade-in {
   animation-name: fadeIn;
   animation-duration: 0.5s;
+}
+
+@media (max-width: 600px) {
+
+
+  .testimonial-slider {
+      padding: 1.5rem 2rem;
+    }
+    .testimonial-slider blockquote {
+      font-size: 1.3rem;
+    }
+
+    .testimonial-slider .author img {
+      width: 48px;
+      height: 48px;
+    }
+
+    button.prev, button.next {
+      width: 32px;
+      height: 32px;
+      font-size: 0.8rem;
+    }
+
+.testimonial-slider .author span, .testimonial-slider .author .wp-block-rich-text__content {
+      font-size: 0.9rem;
+  }
 }
