@@ -1,0 +1,124 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .testimonial-slider {
+  position: relative;
+  background: #f3f3f3;
+  border-radius: 16px;
+  padding: 2rem 3rem;
+  min-width: 320px;
+  max-width: 600px;
+  margin: 2rem auto;
+
+  .slides {
+    width: 100%;
+  }
+
+  .slide {
+    display: none;
+    width: 100%;
+    &.active {
+      display: block;
+    }
+  }
+
+  blockquote {
+    font-size: 2.2rem;
+    font-style: italic;
+    color: #222;
+    margin: 0 0 2rem 0;
+    position: relative;
+    padding-left: 2.5rem;
+    &:before, &:after {
+      content: '"';
+      font-size: 3rem;
+      color: #bbb;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &:after {
+      content: '';
+    }
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1.2rem;
+  }
+
+  .author img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e0e0e0;
+    background: #fff;
+    flex-shrink: 0;
+  }
+
+  .author span, .author .wp-block-rich-text__content {
+    display: block;
+    font-size: 1.1rem;
+    color: #666;
+    margin-left: 0;
+  }
+
+  .author .wp-block-rich-text__content:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 0.2rem;
+  }
+
+  button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #1e1e1e20;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    color: #1e1e1e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: background, transform 0.2s;
+  }
+  button.prev:hover {
+    color: #1e1e1e80;
+    transform: translateY(-50%) translateX(-3px);
+  }
+  button.next:hover {
+    color: #1e1e1e80;
+    transform: translateY(-50%) translateX(3px);
+  }
+  button.prev {
+    left: -20px;
+  }
+  button.next {
+    right: -20px;
+  }
+}
+
+// Animation for fade effect
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}

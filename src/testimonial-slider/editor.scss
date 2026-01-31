@@ -1,0 +1,73 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-testimonial-slider {
+	border: 1px solid #1e1e1e20;
+	padding: 24px 16px;
+	background: #fafbfc;
+ }
+
+.wp-block-create-block-testimonial-slider .testimonial-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 24px;
+	background: #fff;
+	border: 1px solid #e2e4e7;
+	border-radius: 8px;
+	margin-bottom: 24px;
+	padding: 16px;
+	position: relative;
+ }
+
+.testimonial-image-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	min-width: 100px;
+	max-width: 120px;
+ }
+
+.testimonial-image-preview {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 2px solid #e2e4e7;
+	margin-bottom: 4px;
+ }
+
+.testimonial-fields {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+
+	p {
+		margin: 0;
+		font-size: 16px;
+	}
+
+ }
+
+.testimonial-label {
+	font-size: 13px;
+	font-weight: 500;
+	color: #444;
+	margin-bottom: 2px;
+	margin-top: 8px;
+}
+
+.remove-testimonial {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	z-index: 2;
+ }
+
+.wp-block-create-block-testimonial-slider .components-button {
+	margin-top: 8px;
+}
