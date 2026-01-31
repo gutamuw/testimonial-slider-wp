@@ -15,7 +15,7 @@ This is a simple and lightweight testimonial-slider block for gutenberg. Made fo
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+2. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Screenshots ==
 
